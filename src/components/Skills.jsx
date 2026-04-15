@@ -1,16 +1,51 @@
 import skills from "../data/skills";
 
+import {
+  SiPython,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
+  SiTensorflow,
+  SiKeras,
+  SiApachehadoop,
+  SiJupyter,
+} from "react-icons/si";
+import { FaJava, FaAws, FaGitAlt, FaGithub, FaDatabase } from "react-icons/fa";
+
+const skillIcons = {
+  Python: <SiPython />,
+  SQL: <FaDatabase />,
+  Java: <FaJava />,
+  Pandas: <SiPandas />,
+  NumPy: <SiNumpy />,
+  "scikit-learn": <SiScikitlearn />,
+  TensorFlow: <SiTensorflow />,
+  Keras: <SiKeras />,
+  Hadoop: <SiApachehadoop />,
+  HDFS: <FaDatabase />,
+  MapReduce: <FaDatabase />,
+  AWS: <FaAws />,
+  Git: <FaGitAlt />,
+  GitHub: <FaGithub />,
+  Jupyter: <SiJupyter />,
+  "Oracle SQL Developer": <FaDatabase />,
+};
+
+
+
+
 const SkillCard = ({ title, items }) => (
   <div className="rounded-2xl border border-white/10 bg-slate-900 p-6">
     <h3 className="mb-4 text-xl font-semibold text-cyan-400">{title}</h3>
     <div className="flex flex-wrap gap-3">
       {items.map((item) => (
-        <span
+        <div
           key={item}
-          className="rounded-full border border-cyan-400/30 px-3 py-1 text-sm text-slate-300"
+          className="skill-item rounded-full border border-cyan-400/30 px-3 py-2 text-sm text-slate-300 flex items-center gap-2"
         >
-          {item}
-        </span>
+          <span className="skill-icon">{skillIcons[item]}</span>
+          <span>{item}</span>
+        </div>
       ))}
     </div>
   </div>
@@ -31,3 +66,4 @@ const Skills = () => {
 };
 
 export default Skills;
+

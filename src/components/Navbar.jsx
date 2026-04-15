@@ -3,7 +3,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#home" className="text-xl font-bold text-cyan-400">
-          Tanushri
+          PortfolioTV
         </a>
 
         <div className="hidden gap-6 text-sm md:flex">

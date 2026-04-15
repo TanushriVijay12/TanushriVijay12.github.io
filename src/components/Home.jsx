@@ -11,13 +11,9 @@ const Home = () => {
           <h1 className="mb-4 text-4xl font-bold leading-tight md:text-6xl">
             Tanushri Vijayakumar
           </h1>
-          <h2 className="mb-6 text-xl font-semibold text-slate-300 md:text-2xl">
-            MS in Data Science | Aspiring Data Scientist / ML Engineer
+          <h2 className="mb-6 text-xl font-semibold text-slate-300 md:text-xl">
+            I build machine learning solutions and enjoy exploring data, building pipelines, and solving real problems.
           </h2>
-          <p className="mb-8 max-w-xl text-slate-400">
-            I build machine learning, analytics, and data-driven applications
-            using Python, SQL, Hadoop, deep learning, and statistical modeling.
-          </p>
 
           <div className="flex flex-wrap gap-4">
             <a
@@ -46,6 +42,7 @@ const Home = () => {
     />
   </div>
 </div>
+
       </div>
     </section>
   );
