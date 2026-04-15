@@ -50,13 +50,15 @@ const SkillCard = ({ title, items }) => (
 
 const Skills = () => {
   return (
-    <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="skills" className="min-h-screen mx-auto max-w-6xl px-6 py-20 flex flex-col justify-center">
       <h2 className="mb-8 text-3xl font-bold">Skills</h2>
       <div className="grid gap-6 md:grid-cols-2">
         <SkillCard title="Languages" items={skills.languages} />
         <SkillCard title="Data & ML" items={skills.dataML} />
         <SkillCard title="Big Data & Cloud" items={skills.bigDataCloud} />
         <SkillCard title="Tools" items={skills.tools} />
+        <SkillCard title="Databases" items={skills.databases} />
+        <SkillCard title="Visualization" items={skills.viz} />
       </div>
     </section>
   );

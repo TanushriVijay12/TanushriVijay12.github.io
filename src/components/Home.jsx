@@ -1,10 +1,11 @@
 import profile from "../assets/profile.jpeg";
+
 const Home = () => {
   return (
     <section
       id="home"
       className="mx-auto flex min-h-screen max-w-6xl items-center px-6 py-20"
-    >
+    flex flex-col justify-center>
       <div className="grid w-full gap-12 md:grid-cols-2 md:items-center">
         <div>
           <p className="mb-3 text-cyan-400">Hello, I’m</p>

@@ -2,7 +2,7 @@ import experience from "../data/experience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="experience" className="min-h-screen mx-auto max-w-6xl px-6 py-20 flex flex-col justify-center">
       <h2 className="mb-8 text-3xl font-bold">Experience</h2>
       <div className="space-y-6">
         {experience.map((item) => (

@@ -2,7 +2,7 @@ import education from "../data/education";
 
 const Education = () => {
   return (
-    <section id="education" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="education" className="min-h-screen mx-auto max-w-6xl px-6 py-20 flex flex-col justify-center">
       <h2 className="mb-8 text-3xl font-bold">Education</h2>
       <div className="space-y-6">
         {education.map((item) => (
