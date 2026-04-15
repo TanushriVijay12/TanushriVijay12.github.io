@@ -31,9 +31,6 @@ const skillIcons = {
   "Oracle SQL Developer": <FaDatabase />,
 };
 
-
-
-
 const SkillCard = ({ title, items }) => (
   <div className="rounded-2xl border border-white/10 bg-slate-900 p-6">
     <h3 className="mb-4 text-xl font-semibold text-cyan-400">{title}</h3>
